@@ -5,7 +5,6 @@ import {
   Clock,
   Target,
   Zap,
-  Calendar,
   TrendingUp,
 } from "lucide-react";
 
@@ -95,16 +94,16 @@ const ProductivityDashboard = () => {
     );
   };
 
-  const addTask = (text, category = "other") => {
-    const newTask = {
-      id: Date.now(),
-      text,
-      category,
-      completed: false,
-      priority: "medium",
-    };
-    setTasks([...tasks, newTask]);
-  };
+  // const addTask = (text, category = "other") => {
+  //   const newTask = {
+  //     id: Date.now(),
+  //     text,
+  //     category,
+  //     completed: false,
+  //     priority: "medium",
+  //   };
+  //   setTasks([...tasks, newTask]);
+  // };
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
